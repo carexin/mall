@@ -11,6 +11,7 @@
     <modules>
 
         <module>common</module>
+        <module>data-center</module>
     </modules>
 
     <properties>
@@ -31,6 +32,15 @@
                 <artifactId>spring-context</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.18</version>
+                <scope>provided</scope>
+            </dependency>
+
+
 
         </dependencies>
     </dependencyManagement>

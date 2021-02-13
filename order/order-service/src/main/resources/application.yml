@@ -7,7 +7,7 @@ eureka:
     hostname: localhost
   client:
     # 是否向注册中心注册本身服务
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://a.eureka.tt:${server.port}/eureka/

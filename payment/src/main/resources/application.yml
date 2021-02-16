@@ -12,3 +12,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8000/eureka/
+  instance:
+    # 暴露给eureka服务端显式的instanceId
+    instance-id: payment-service
+    prefer-ip-address: true

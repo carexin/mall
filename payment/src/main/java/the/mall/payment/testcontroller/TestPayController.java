@@ -10,13 +10,15 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("payment/test")
 public class TestPayController {
 
+	private static final String orderUrl = "http://localhost:7001/order-for-pay/order-dto-of?orderNo=123123";
+
 	@Autowired
 	private RestTemplate restTemplate;
 
 	@GetMapping("get")
 	public OrderDTO get() {
 
-		restTemplate.postForEntity("", null, null);
-		return null;
+		OrderDTO orderDTO = restTemplate.postForEntity(orderUrl, "no1112", OrderDTO.class).getBody();
+		return orderDTO;
 	}
 }

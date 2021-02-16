@@ -10,4 +10,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://a.eureka.tt:${server.port}/eureka/
+      defaultZone: http://a.eureka.tt:8000/eureka/
